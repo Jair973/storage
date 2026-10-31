@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/pagina2.js" defer></script>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Página 2</h1>
+
+        <p id="saludo">Aquí aparecerá tu nombre.</p>
+
+        <button id="btn-borrar">Borrar el nombre</button>
+        <button id="btn-borrar-todo">Borrar todo</button>
+
+        <p>
+            <a href="index.html">Volver a la página 1</a>
+        </p>
+
+
+        <h2>Respuestas a las preguntas de reflexión</h2>
+
+        <h3>Pregunta 1</h3>
+        <p>La página 2 conoce mi nombre porque la página 1 lo guarda en sessionStorage y la página 2 lo lee.</p>
+
+        <h3>Pregunta 2</h3>
+        <p>getItem() devuelve null cuando no hay ningún nombre guardado. Si no se verifica ese resultado, podría aparecer un saludo sin nombre.</p>
+
+        <h3>Pregunta 3</h3>
+        <p>Al recargar la página, el dato sigue guardado. Al cerrar la pestaña, sessionStorage elimina los datos de esa sesión.</p>
+
+        <h3>Pregunta 4</h3>
+        <p>No guardaría una contraseña en sessionStorage porque se puede consultar y modificar desde el navegador.</p>
+    </div>
+
+</body>
+</html>
